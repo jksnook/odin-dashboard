@@ -1,0 +1,32 @@
+:root {
+  font-family: Roboto, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 1 / 5;
+}
+
+.header {
+  grid-column: 2 / 4;
+}
+
+.interact {
+  grid-column: 2 / 4;
+}
+
+.projects {
+  grid-column: 2 / 3;
+  grid-row: 3 / 5;
+}
