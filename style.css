@@ -165,7 +165,7 @@ img.profile-large {
   grid-column: 2 / 3;
   grid-row: 3 / 5;
   background-color: #e2e8f0;
-  padding: 20px;
+  padding: 30px 15px 30px 30px;
 }
 
 .projects h1 {
@@ -174,14 +174,18 @@ img.profile-large {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 350px);
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
   margin-top: 15px;
 }
 
 .card h2 {
   font-size: 1.4rem;
   margin-bottom: 5px;
+}
+
+.card p {
+  color: rgb(58, 58, 58);
 }
 
 .card {
@@ -198,11 +202,50 @@ img.profile-large {
 .card ul {
   display: flex;
   justify-content: end;
+  gap: 15px;
 }
 
 .card img {
   height: 25px;
   width: auto;
+}
+
+.announcements {
+  background-color: #e2e8f0;
+  padding: 30px 30px 30px 15px;
+}
+
+.announcements h1 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.announcements h2 {
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.announcement p {
+  font-size: 0.9rem;
+  color: rgb(58, 58, 58);
+}
+
+.announcements ul {
+  background-color: white;
+  box-shadow: 0px 4px 8px 0px rgb(122, 122, 122);
+  border-radius: 10px;
+  padding: 20px 30px;
+  display: grid;
+  grid-auto-rows: 1fr;
+}
+
+.announcements ul li {
+  border-bottom: 1px solid rgb(179, 179, 179);
+  padding: 10px 0px;
+}
+
+.announcements ul li:last-child {
+  border: none;
 }
 
 .icon-large {
