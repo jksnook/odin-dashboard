@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   display: grid;
   gap: 15px;
@@ -46,7 +50,6 @@
 }
 
 .sidebar ul li a {
-  text-decoration: none;
   color: white;
   font-weight: bold;
 
@@ -59,6 +62,48 @@
 
 .header {
   grid-column: 2 / 4;
+  display: flex;
+  padding: 15px 30px;
+  align-items: center;
+  gap: 15px;
+}
+
+.header img {
+  height: 25px;
+  width: auto;
+}
+
+.header form {
+  flex: 1;
+}
+
+.header input {
+  padding: 3px;
+  height: 30px;
+  width: 100%;
+  border: none;
+  border-radius: 500px;
+  background-color: #e2e8f0;
+}
+
+.header a {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.header a.notifications {
+  margin-left: 100px;
+}
+
+.header a.account-name {
+  margin: 0 20px;
+}
+
+img.profile-small {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
 }
 
 .interact {
