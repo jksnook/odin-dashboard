@@ -10,12 +10,51 @@
 .container {
   display: grid;
   gap: 15px;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 280px 3fr 1fr;
 }
 
 .sidebar {
+  background-color: #38bdf8;
+  color: white;
   grid-column: 1 / 2;
   grid-row: 1 / 5;
+}
+
+.sidebar h1{
+  font-size: 1.7rem;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul.menu2 {
+  margin-top: 60px;
+}
+
+.sidebar ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 27px 10px 35px;
+  font-size: 1.3rem;
+}
+
+.sidebar ul li:hover {
+  background-color: #0284c7;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+
+}
+
+.sidebar ul li img {
+  height: 30px;
+  width: auto;
 }
 
 .header {
@@ -29,4 +68,19 @@
 .projects {
   grid-column: 2 / 3;
   grid-row: 3 / 5;
+}
+
+.icon-large {
+  height: 60px;
+  width: auto;
+}
+
+.sidebar-heading {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.sidebar-heading img {
+  margin: 15px;
 }
